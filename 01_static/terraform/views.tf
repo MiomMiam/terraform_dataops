@@ -6,6 +6,7 @@ resource "google_bigquery_table" "transaction_fra" {
 
   friendly_name = "Sales Transaction FRANCE"
   description   = "French sales transaction view without details"
+  deletion_protection = false
 
   labels = {
     env = "dev"

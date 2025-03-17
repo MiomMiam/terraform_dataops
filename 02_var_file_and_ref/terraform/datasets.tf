@@ -1,14 +1,14 @@
 resource "google_bigquery_dataset" "sale" {
 
-  project       = "terraform-dataops-dev"
+  project       = local.dataops_project
   dataset_id    = "sale"
-  location      = "EU"
+  location      = local.zone
 
   friendly_name = "Sales"
   description   = "Sales dataset for all BU"
 
   labels = {
-    env = "dev"
+    env = local.env
     product = "retail"
   }
 

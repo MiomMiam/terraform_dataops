@@ -6,13 +6,14 @@ resource "google_bigquery_table" "transaction" {
 
   friendly_name = "Sales Transaction"
   description   = "Sales transaction table without details"
+  deletion_protection = false
 
   labels = {
     env = "dev"
     product = "retail"
   }
 
-  schema     = <<EOF
+  schema = <<EOF
   [
     {
       "name": "transaction_id",
