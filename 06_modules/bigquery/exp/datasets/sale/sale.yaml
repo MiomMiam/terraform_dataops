@@ -1,0 +1,12 @@
+project: ${exposed_project}
+dataset_id: sale
+location: ${location}
+
+friendly_name: Sales
+description: Sales dataset for exposition to other teams
+
+labels:
+  env: ${env}
+  product: retail
+
+delete_contents_on_destroy: true

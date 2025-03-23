@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
     bucket = "terraform-dataops-dev-state"
-    prefix = "05_modules"
+    prefix = "06_modules"
   }
 }

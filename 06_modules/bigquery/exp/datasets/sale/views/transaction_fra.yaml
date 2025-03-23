@@ -1,0 +1,20 @@
+project: ${exposed_project}
+dataset_id: sale
+view_id: transaction_fra
+
+friendly_name: Sales Transaction FRANCE
+description: French sales transaction view without details
+deletion_protection: false
+
+labels:
+  env: ${env}
+  product: retail
+
+schema_file: schema/transaction_fra.json
+query_file: query/transaction_fra.sql
+
+use_legacy_sql: false
+
+authorized_views:
+  ${dataops_project}:
+    - sale
