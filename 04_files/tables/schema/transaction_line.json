@@ -1,0 +1,122 @@
+[
+  {
+    "name": "transaction_id",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for the sales transaction."
+  },
+  {
+    "name": "transaction_line_number",
+    "type": "INTEGER",
+    "mode": "REQUIRED",
+    "description": "Line number of the detailed sale transaction."
+  },
+  {
+    "name": "transaction_date",
+    "type": "DATE",
+    "mode": "REQUIRED",
+    "description": "Date when the transaction occurred."
+  },
+  {
+    "name": "transaction_time",
+    "type": "TIME",
+    "mode": "REQUIRED",
+    "description": "Time when the transaction occurred."
+  },
+  {
+    "name": "transaction_line_type_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for the type of line transaction."
+  },
+  {
+    "name": "product_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Product code for the line."
+  },
+  {
+    "name": "product_label",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Product label for the line."
+  },
+  {
+    "name": "product_ean",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Product ean for the line."
+  },
+  {
+    "name": "amount_including_tax",
+    "type": "NUMERIC",
+    "mode": "REQUIRED",
+    "description": "amount for the line with taxes included"
+  },
+  {
+    "name": "amount_excluding_tax",
+    "type": "NUMERIC",
+    "mode": "REQUIRED",
+    "description": "amount for the line with taxes excluded"
+  },
+  {
+    "name": "tax_amount",
+    "type": "NUMERIC",
+    "mode": "REQUIRED",
+    "description": "tax amount for the line"
+  },
+  {
+    "name": "discount_amount",
+    "type": "NUMERIC",
+    "mode": "NULLABLE",
+    "description": "discount amount for the line"
+  },
+  {
+    "name": "product_quantity",
+    "type": "NUMERIC",
+    "mode": "NULLABLE",
+    "description": "Quantity for the product"
+  },
+  {
+    "name": "business_unit_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for the business unit where the transaction occurred."
+  },
+  {
+    "name": "store_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for the store where the transaction occurred."
+  },
+  {
+    "name": "register_code",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "Unique identifier for the register where the transaction occurred."
+  },
+  {
+    "name": "created_at",
+    "type": "TIMESTAMP",
+    "mode": "REQUIRED",
+    "description": "technical field to capture the timestamp when the record was created."
+  },
+  {
+    "name": "updated_at",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE",
+    "description": "technical field to capture the timestamp when the record was last updated."
+  },
+  {
+    "name": "created_by",
+    "type": "STRING",
+    "mode": "REQUIRED",
+    "description": "User or system who created the transaction."
+  },
+  {
+    "name": "updated_by",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "User or system who last updated the transaction."
+  }
+]

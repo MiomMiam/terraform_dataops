@@ -1,0 +1,21 @@
+project: ${dataops_project}
+dataset_id: sale
+table_id: transaction_line
+
+friendly_name: Sales Transaction Line
+description: Sales transaction line table with the details for each sale
+deletion_protection: false
+
+labels:
+  env: ${env}
+  product: retail
+
+schema_file: schema/transaction_line.json
+
+clustering:
+  - business_unit_code
+  - store_code
+
+time_partitioning:
+  type: DAY
+  field: transaction_date
