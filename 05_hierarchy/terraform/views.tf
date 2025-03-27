@@ -9,6 +9,7 @@ locals {
             env = local.env,
             location = local.zone,
             dataops_project = local.dataops_project
+            exposed_project = local.exposed_project
           }
         ))
         path         = file
@@ -54,6 +55,7 @@ resource "google_bigquery_table" "views" {
         env = local.env,
         location = local.zone,
         dataops_project = local.dataops_project
+        exposed_project = local.exposed_project
       }
     )
 
